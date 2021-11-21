@@ -2,7 +2,7 @@ const { MOVEMENT } = require("./utils/movement");
 
 class Vector {
   // This class could have easily been a library but
-  // I figured you'd much perfer to see what I could
+  // I figured you'd much prefer to see what I could
   // come up with on my own!
 
   constructor({ x, y }) {

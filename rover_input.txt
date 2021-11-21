@@ -1,4 +1,4 @@
-// You're able to add new instruciton sequences to this file
+// You're able to add new instruction sequences to this file
 // and comment out any test cases you're not using!
 
 // >> TEST CASE 1
