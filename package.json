@@ -1,0 +1,11 @@
+{
+  "name": "mars_rovers",
+  "version": "1.0.0",
+  "description": "Mars rover technical challenge - Sam Peach - Nov. 2021",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "Sam Peach: sampeachdev@gmail.com",
+  "license": "ISC"
+}
