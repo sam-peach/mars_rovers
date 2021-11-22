@@ -2,8 +2,7 @@ const fs = require("fs");
 
 class InputReader {
   constructor(filePath) {
-    // Loading all the instructions into memory as they're
-    // very small!
+    // Loading all the instructions into memory as they're only a few
     this.lines = fs
       .readFileSync(filePath, "utf-8")
       .split("\n")
@@ -29,7 +28,8 @@ class InputReader {
   }
 
   #lineIsBlank(line) {
-    return line === "\r";
+    // This accounts for how Windows and Mac handle line breaks
+    return line === "" || line === "\r";
   }
 }
 

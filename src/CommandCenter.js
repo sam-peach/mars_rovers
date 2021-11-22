@@ -1,8 +1,8 @@
 const { MOVEMENT } = require("./utils");
 
 class CommandCenter {
-  // This class is the brain of what's going on. It's orchestrating the
-  // command pipeline and pushing commands to the rover itself.
+  // This class is the brain of the application. It's responsible for
+  // orchestrating the command pipeline and pushing commands to the rovers themselves.
 
   constructor({ width, height }) {
     this.width = width;
@@ -56,12 +56,11 @@ class CommandCenter {
         this.rover.moveForward();
         break;
       case MOVEMENT.ROTATE_CLOCKWISE: // This is a nice trick to check for MOVEMENT.ROTATE_CLOCKWISE
-      case MOVEMENT.ROTATE_COUNTERCLOCKWISE: // _or_ MOVEMENT.ROTATE_COUNTERCLOCKWIS, while hitting the same logic.
+      case MOVEMENT.ROTATE_COUNTERCLOCKWISE: // _or_ MOVEMENT.ROTATE_COUNTERCLOCKWISE while still hitting the same logic.
         this.rover.rotate(command);
         break;
       default:
-        // If this project were to be explaned upon, error checking
-        // and error handling would be a good next step!
+        // If this project were to expand, more robust error checking and error handling would be essential!
         throw Error(`Unknown command: ${command}`);
     }
   }

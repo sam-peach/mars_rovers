@@ -3,8 +3,8 @@ const Vector = require("./Vector");
 
 class Rover {
   // I wanted this rover class to be ignorant of what's happening
-  // in the command center. Much like any good robot, I'm aiming
-  // for it to do what it's told via a simple interface.
+  // in the CommandCenter. Much like any good robot, it should do
+  // what it's told via a simple interface.
 
   constructor(position, heading) {
     this.position = position;
@@ -15,8 +15,8 @@ class Rover {
     const position = `${this.position.x}, ${this.position.y}`;
 
     // Seeing as we only need the heading in a human-readable
-    // form once we report the status it made sense to me
-    // to only calculate that once we needed it.
+    // form once we report the status, it makes sense to me
+    // to only calculate the heading label once needed.
     const heading = `${getHeadingLabel(this.heading)}`;
 
     return `(${position}, ${heading})`;

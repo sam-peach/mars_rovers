@@ -1,12 +1,12 @@
 // You're able to add new instruction sequences to this file
-// and comment out any test cases you're not using!
+// and comment out any cases you're not using!
 
-// >> TEST CASE 1
+// >> CASE 1
 4 8
 (2, 3, E) LFRFF
 (0, 2, N) FFLFRFF
 
-// >> TEST CASE 2
+// >> CASE 2
 // 4 8
 // (2, 3, N) FLLFR
 // (1, 0, S) FFRLF 

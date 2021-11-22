@@ -4,8 +4,8 @@ const MOVEMENT = {
   ROTATE_COUNTERCLOCKWISE: "L",
 };
 
-// This module is used by the Vecotor class, which in turn
-// is used by the headings.js. This exporty needs to be specified as
-// module.exports.MOVEMENT vs module.exports = MOVEMENT dude to how
-// Node.js is loading the top-level data.
+// This module is used by the Vector class, which in turn
+// is used by headings.js. This export needs to be specified as
+// module.exports.MOVEMENT vs. module.exports = MOVEMENT due to how
+// Node.js loads the top-level data.
 module.exports.MOVEMENT = MOVEMENT;

@@ -3,8 +3,7 @@ const Vector = require("./Vector");
 
 class CommandParser {
   // We don't need to track any state for the
-  // CommandParser so static methods should be a good
-  // fit here!
+  // CommandParser so static methods are a good fit here.
 
   static parse(rawCommand) {
     const [x, y] = this.#extractPositionValues(rawCommand);
@@ -28,8 +27,7 @@ class CommandParser {
   }
 
   static #extractHeading(rawCommand) {
-    // Extract the value before the last ')' that matches
-    // any of the HEADING enum keys
+    // Extract the value before the last ')' that matches any of the HEADING enum keys
     return rawCommand.match(
       new RegExp(`[${Object.keys(HEADINGS).join("")}](?=\\))`, "g")
     )[0];
